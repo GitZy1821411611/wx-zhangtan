@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-button": "../../libs/button/index",
+    "i-card": "../../libs/card/index"
+  }
+}
