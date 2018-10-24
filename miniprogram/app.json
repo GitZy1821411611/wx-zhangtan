@@ -1,19 +1,62 @@
 {
   "cloud": true,
   "pages": [
+    "pages/my/my",
+    "pages/home/home",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/chooseLib",
+    "pages/type/type",
+    "pages/publish/publish",
+    "pages/search/search"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#1890ff",
+    "navigationBarTitleText": "御景城跳蚤市场",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "color":"#666666",
+    "selectedColor":"#1890ff",
+    "backgroundColor":"#ffffff",
+    "borderStyle":"#666666",
+    "list": [
+      {
+        "selectedIconPath": "images/home-active.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/sort-active.png",
+        "iconPath": "images/sort.png",
+        "pagePath": "pages/type/type",
+        "text": "类型"
+      },
+      {
+        "selectedIconPath": "images/add-active.png",
+        "iconPath": "images/add.png",
+        "pagePath": "pages/publish/publish",
+        "text": "发布"
+      },
+      {
+        "selectedIconPath": "images/search-active.png",
+        "iconPath": "images/search.png",
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+      },
+      {
+        "selectedIconPath": "images/my-active.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/my/my",
+        "text": "我"
+      }
+    ]
   }
 }

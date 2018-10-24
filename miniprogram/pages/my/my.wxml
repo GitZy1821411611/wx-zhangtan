@@ -1,0 +1,9 @@
+<!--miniprogram/pages/my/my.wxml-->
+<view class='my'>
+  <view class='userinfo'>
+
+  </view>
+  <view class='modify'>
+    <wux-button block type="royal" class='btn-add'>完善我的个人信息</wux-button>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+/* miniprogram/pages/my/my.wxss */
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.my {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("http://i2.bvimg.com/666285/94709882eeec8c10.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0px 30rpx;
+  background-color: #fff;
+}
+
+.my .userinfo {
+  height: 400rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  -moz-box-shadow: 2px 1px 18px #8fa9ff;
+  -webkit-box-shadow: 2px 1px 18px #8fa9ff;
+  box-shadow: 2px 1px 18px #8fa9ff;
+}
+.my .modify{
+  margin-top: 60rpx;
+}
+.my .modify .btn-add{
+  background-color: #1890ff;
+}
