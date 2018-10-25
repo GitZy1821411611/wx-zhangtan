@@ -1,7 +1,7 @@
 /* miniprogram/pages/my/my.wxss */
 
 page {
-  background: #f6f6f6;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,6 +18,8 @@ page {
   background-repeat: no-repeat;
   padding: 0px 30rpx;
   background-color: #fff;
+  color: #666;
+  font-size: 32rpx;
 }
 
 .my .userinfo {
@@ -28,9 +30,75 @@ page {
   -webkit-box-shadow: 2px 1px 18px #8fa9ff;
   box-shadow: 2px 1px 18px #8fa9ff;
 }
-.my .modify{
-  margin-top: 60rpx;
+
+.my .userinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
 }
-.my .modify .btn-add{
+
+.my .userinfo .name-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.my .userinfo .tel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+
+.my .userinfo .tel .tel-icon {
+  margin-right: 20rpx;
+  color: #1890ff;
+}
+
+.my .userinfo .name-wrap .avatar {
+  margin-right: 30rpx;
+}
+
+.my .modify {
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}
+
+.my .modify .btn-add {
   background-color: #1890ff;
+}
+
+.my .secticon {
+  padding-bottom: 20rpx;
+}
+
+.my .secticon .publish-wrap {
+  padding: 0 20rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.my .secticon .secticon-title {
+  border-left: 8rpx solid #1890ff;
+  padding-left: 20rpx;
+}
+
+.my .secticon .secticon-list {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.my .secticon .secticon-list .publish-time {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.my .secticon .secticon-list .publish-title {
+  flex: 1;
 }

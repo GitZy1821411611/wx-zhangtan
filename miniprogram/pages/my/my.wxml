@@ -1,9 +1,101 @@
 <!--miniprogram/pages/my/my.wxml-->
 <view class='my'>
   <view class='userinfo'>
-
+    <view class='name-wrap'>
+      <view class='avatar'>
+        <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+      </view>
+      <view class='name'>
+        natian
+      </view>
+    </view>
+    <view class='tel'>
+      <wux-icon type="ios-home" size="20" class='tel-icon' />御景城
+    </view>
+    <view class='tel'>
+      <wux-icon type="ios-call" size="20" class='tel-icon' />13085064598
+    </view>
+    <view class='tel'>
+      <wux-icon type="ios-locate" size="20" class='tel-icon' />安徽省合肥市高新区
+    </view>
   </view>
   <view class='modify'>
     <wux-button block type="royal" class='btn-add'>完善我的个人信息</wux-button>
+  </view>
+  <!-- my publish -->
+  <view class='secticon'>
+    <view class='secticon-title'>我的发布</view>
+    <view class='secticon-list'>
+      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+      <view class='publish-wrap'>
+        <view class='publish-title'>
+          出售苹果8一部，非诚勿扰
+        </view>
+        <view class='publish-time'>
+          2018-09-08
+        </view>
+      </view>
+
+    </view>
+    <view class='secticon-list'>
+      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+      <view class='publish-wrap'>
+        <view class='publish-title'>
+          出售苹果8一部，非诚勿扰
+        </view>
+        <view class='publish-time'>
+          2018-09-08
+        </view>
+      </view>
+
+    </view>
+    <view class='secticon-list'>
+      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+      <view class='publish-wrap'>
+        <view class='publish-title'>
+          出售苹果8一部，非诚勿扰
+        </view>
+        <view class='publish-time'>
+          2018-09-08
+        </view>
+      </view>
+
+    </view>
+    <view class='secticon-list'>
+      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+      <view class='publish-wrap'>
+        <view class='publish-title'>
+          出售苹果8一部，非诚勿扰
+        </view>
+        <view class='publish-time'>
+          2018-09-08
+        </view>
+      </view>
+
+    </view>
+    <view class='secticon-list'>
+      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+      <view class='publish-wrap'>
+        <view class='publish-title'>
+          出售苹果8一部，非诚勿扰
+        </view>
+        <view class='publish-time'>
+          2018-09-08
+        </view>
+      </view>
+
+    </view>
+    <view class='secticon-list'>
+      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+      <view class='publish-wrap'>
+        <view class='publish-title'>
+          出售苹果8一部，非诚勿扰
+        </view>
+        <view class='publish-time'>
+          2018-09-08
+        </view>
+      </view>
+
+    </view>
   </view>
 </view>
