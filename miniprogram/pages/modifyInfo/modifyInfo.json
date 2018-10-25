@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "完善个人信息",
+  "usingComponents": {
+    "i-panel": "../../libs/panel/index",
+    "i-input": "../../libs/input/index",
+    "wux-popup": "../../dist/popup/index",
+    "van-area": "../../vant/area/index"
+  }
+}

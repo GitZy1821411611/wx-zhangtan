@@ -2,21 +2,23 @@
 <view class='my'>
   <view class='userinfo'>
     <view class='name-wrap'>
-      <view class='avatar'>
-        <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+      <view class='avatar' bindtap='get'>
+        <wux-avatar shape="square" src="{{avatarUrl}}" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
       </view>
       <view class='name'>
-        natian
+        <button wx:if="{{avatarUrl == ''}}" class='get-btn' open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">点击登录</button>
+        <text wx:if="{{avatarUrl != ''}}">{{userInfo.nickName}}</text>
       </view>
     </view>
     <view class='tel'>
-      <wux-icon type="ios-home" size="20" class='tel-icon' />御景城
+      <wux-icon type="ios-home" size="20" class='tel-icon' />暂未修改小区
     </view>
     <view class='tel'>
-      <wux-icon type="ios-call" size="20" class='tel-icon' />13085064598
+      <wux-icon type="ios-call" size="20" class='tel-icon' />暂未修改电话号码
+      <!-- <button class='get-btn' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">点击获取手机号码</button> -->
     </view>
     <view class='tel'>
-      <wux-icon type="ios-locate" size="20" class='tel-icon' />安徽省合肥市高新区
+      <wux-icon type="ios-locate" size="20" class='tel-icon' />暂未修改地址
     </view>
   </view>
   <view class='modify'>

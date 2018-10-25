@@ -1,6 +1,7 @@
 {
   "cloud": true,
   "pages": [
+    "pages/modifyInfo/modifyInfo",
     "pages/my/my",
     "pages/home/home",
     "pages/index/index",
@@ -22,10 +23,10 @@
     "navigationBarTextStyle": "#ffffff"
   },
   "tabBar": {
-    "color":"#666666",
-    "selectedColor":"#1890ff",
-    "backgroundColor":"#ffffff",
-    "borderStyle":"#666666",
+    "color": "#666666",
+    "selectedColor": "#1890ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "#666666",
     "list": [
       {
         "selectedIconPath": "images/home-active.png",
