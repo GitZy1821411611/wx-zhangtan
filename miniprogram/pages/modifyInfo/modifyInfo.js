@@ -1,5 +1,10 @@
 // miniprogram/pages/modifyInfo/modifyInfo.js
 import areaList from "../../area.js"
+const app = getApp();
+const db = wx.cloud.database({
+  env: "env-01b937"
+})
+const _ = db.command
 Page({
 
   /**
@@ -11,6 +16,22 @@ Page({
     area: "",
     home: "",
     tel: ""
+  },
+  insertDb() {
+    db.collection('tb_user').where({
+      userid: app.globalData.openid
+    }).update({
+      // data 字段表示需新增的 JSON 数据
+      data: {
+        userid: app.globalData.openid,
+        home: this.data.home,
+        tel: this.data.tel
+      },
+      success: function(res) {
+        // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+        console.log(res)
+      }
+    })
   },
   open2() {
     this.setData({
@@ -34,6 +55,12 @@ Page({
   },
   cancelPop() {
     this.onClose('visible2')
+  },
+  back() {
+    console.log("back")
+    wx.navigateBack({
+      delta: 1
+    })
   },
   /**
    * 生命周期函数--监听页面加载

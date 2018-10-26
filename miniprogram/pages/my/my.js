@@ -17,10 +17,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    //
     // 获取用户信息
     wx.getSetting({
       success: res => {
         if (res.authSetting['scope.userInfo']) {
+          this.onGetOpenid();
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
             success: res => {
@@ -51,7 +53,27 @@ Page({
       })
     }
   },
+  goPageModifyInfo() {
+    wx.navigateTo({
+      url: "../modifyInfo/modifyInfo"
+    })
+  },
+  onGetOpenid: function() {
+    // 调用云函数
+    wx.cloud.callFunction({
+      name: 'login',
+      data: {},
+      success: res => {
+        console.log('[云函数] [login] user openid: ', res.result.openid)
+        app.globalData.openid = res.result.openid
+        console.log(app.globalData.openid)
+      },
+      fail: err => {
+        console.error('[云函数] [login] 调用失败', err)
 
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -63,7 +85,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    console.log("show")
   },
 
   /**

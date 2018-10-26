@@ -22,7 +22,7 @@
     </view>
   </view>
   <view class='modify'>
-    <wux-button block type="royal" class='btn-add'>完善我的个人信息</wux-button>
+    <wux-button block type="royal" bindtap='goPageModifyInfo' class='btn-add'>完善我的个人信息</wux-button>
   </view>
   <!-- my publish -->
   <view class='secticon'>

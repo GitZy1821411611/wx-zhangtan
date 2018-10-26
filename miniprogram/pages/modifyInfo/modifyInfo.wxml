@@ -1,8 +1,9 @@
+<van-nav-bar right-text="确定" bind:click-right="insertDb" />
 <view class='modifyInfo'>
   <i-panel title="个人信息">
     <i-input value="{{ home }}" title="所在小区" autofocus placeholder="请输入所在小区" />
     <i-input value="{{ tel }}" type="number" title="联系电话" placeholder="请输入手机号" />
-    <i-input value="{{ area }}" bindtap='open2' type="textarea" title="所在地区" placeholder="请选择所在地区" maxlength="50" disabled='disabled'/>
+    <i-input value="{{ area }}" bindtap='open2' type="textarea" title="所在地区" placeholder="请选择所在地区" maxlength="50" disabled='disabled' />
   </i-panel>
 </view>
 <wux-popup position="bottom" class-names="slideInUp" visible="{{ visible2 }}" bind:close="onClose2">

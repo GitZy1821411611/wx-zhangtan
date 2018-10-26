@@ -1,7 +1,6 @@
 {
   "cloud": true,
   "pages": [
-    "pages/modifyInfo/modifyInfo",
     "pages/my/my",
     "pages/home/home",
     "pages/index/index",
@@ -13,7 +12,8 @@
     "pages/chooseLib/chooseLib",
     "pages/type/type",
     "pages/publish/publish",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/modifyInfo/modifyInfo"
   ],
   "window": {
     "backgroundColor": "#ffffff",
