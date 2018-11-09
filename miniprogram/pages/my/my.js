@@ -1,5 +1,8 @@
 // miniprogram/pages/my/my.js
 const app = getApp();
+const db = wx.cloud.database({
+  env: "env-01b937"
+})
 Page({
 
   /**
@@ -10,7 +13,11 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    home: "暂未修改小区",
+    tel: "暂未修改电话号码",
+    area: "暂未修改地址",
+    visible: false
   },
 
   /**
@@ -74,6 +81,22 @@ Page({
       }
     })
   },
+  getInfo() {
+    db.collection("tb_user").doc(app.globalData.openid).get().then(res => {
+      this.setData({
+        home: res.data.home == "" ? "暂未修改小区" : res.data.home,
+        tel: res.data.tel == "" ? "暂未修改电话号码" : res.data.tel,
+        area: res.data.area == "" ? "暂未修改地址" : res.data.area
+      })
+      if (res.data.home == "" || res.data.tel == "" || res.data.area == "") {
+        this.setData({
+          visible: true
+        })
+      }
+    }).catch(error => {
+      console.log(error)
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -85,7 +108,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    console.log("show")
+    this.getInfo();
   },
 
   /**

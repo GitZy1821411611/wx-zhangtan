@@ -11,18 +11,19 @@
       </view>
     </view>
     <view class='tel'>
-      <wux-icon type="ios-home" size="20" class='tel-icon' />暂未修改小区
+      <wux-icon type="ios-home" size="20" class='tel-icon' />{{home}}
     </view>
     <view class='tel'>
-      <wux-icon type="ios-call" size="20" class='tel-icon' />暂未修改电话号码
+      <wux-icon type="ios-call" size="20" class='tel-icon' />{{tel}}
       <!-- <button class='get-btn' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">点击获取手机号码</button> -->
     </view>
     <view class='tel'>
-      <wux-icon type="ios-locate" size="20" class='tel-icon' />暂未修改地址
+      <wux-icon type="ios-locate" size="20" class='tel-icon' />{{area}}
     </view>
   </view>
   <view class='modify'>
-    <wux-button block type="royal" bindtap='goPageModifyInfo' class='btn-add'>完善我的个人信息</wux-button>
+    <wux-button block type="royal" wx:if="{{visible}}" bindtap='goPageModifyInfo' class='btn-add'>完善我的个人信息</wux-button>
+    <wux-button block type="royal" wx:if="{{!visible}}" bindtap='goPageModifyInfo' class='btn-add'>修改我的个人信息</wux-button>
   </view>
   <!-- my publish -->
   <view class='secticon'>

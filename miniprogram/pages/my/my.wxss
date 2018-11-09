@@ -18,7 +18,7 @@ page {
   right: 0;
   top: 0;
   bottom: 0;
-  background-image: url("http://i2.bvimg.com/666285/94709882eeec8c10.png");
+  background-image: url("https://raw.githubusercontent.com/GitZy1821411611/order/master/bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   padding: 0px 30rpx;
