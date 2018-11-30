@@ -17,7 +17,8 @@ Page({
     home: "暂未修改小区",
     tel: "暂未修改电话号码",
     area: "暂未修改地址",
-    visible: false
+    visible: false,
+    published: []
   },
 
   /**
@@ -109,8 +110,26 @@ Page({
    */
   onShow: function() {
     this.getInfo();
+    console.log("show")
+    this.getRecords();
   },
-
+  //获取记录
+  getRecords: function() {
+    const self = this;
+    if (!app.globalData.openid) return;
+    db.collection('tb_records').where({
+        recordid: app.globalData.openid
+      })
+      .get({
+        success: function(res) {
+          // res.data 是包含以上定义的两条记录的数组
+          console.log(res.data)
+          self.setData({
+            published: res.data
+          })
+        }
+      })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */

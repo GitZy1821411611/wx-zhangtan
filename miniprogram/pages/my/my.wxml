@@ -28,77 +28,16 @@
   <!-- my publish -->
   <view class='secticon'>
     <view class='secticon-title'>我的发布</view>
-    <view class='secticon-list'>
-      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+    <view class='secticon-list' wx:for="{{published}}" wx:key="{{index}}">
+      <wux-avatar shape="square" src="{{item.recordimages[0]}}" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
       <view class='publish-wrap'>
         <view class='publish-title'>
-          出售苹果8一部，非诚勿扰
+          {{item.recordtitle}}
         </view>
         <view class='publish-time'>
-          2018-09-08
+          {{item.recordtime}}
         </view>
       </view>
-
-    </view>
-    <view class='secticon-list'>
-      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
-      <view class='publish-wrap'>
-        <view class='publish-title'>
-          出售苹果8一部，非诚勿扰
-        </view>
-        <view class='publish-time'>
-          2018-09-08
-        </view>
-      </view>
-
-    </view>
-    <view class='secticon-list'>
-      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
-      <view class='publish-wrap'>
-        <view class='publish-title'>
-          出售苹果8一部，非诚勿扰
-        </view>
-        <view class='publish-time'>
-          2018-09-08
-        </view>
-      </view>
-
-    </view>
-    <view class='secticon-list'>
-      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
-      <view class='publish-wrap'>
-        <view class='publish-title'>
-          出售苹果8一部，非诚勿扰
-        </view>
-        <view class='publish-time'>
-          2018-09-08
-        </view>
-      </view>
-
-    </view>
-    <view class='secticon-list'>
-      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
-      <view class='publish-wrap'>
-        <view class='publish-title'>
-          出售苹果8一部，非诚勿扰
-        </view>
-        <view class='publish-time'>
-          2018-09-08
-        </view>
-      </view>
-
-    </view>
-    <view class='secticon-list'>
-      <wux-avatar shape="square" src="" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
-      <view class='publish-wrap'>
-        <view class='publish-title'>
-          出售苹果8一部，非诚勿扰
-        </view>
-        <view class='publish-time'>
-          2018-09-08
-        </view>
-      </view>
-
     </view>
   </view>
 </view>

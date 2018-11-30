@@ -1,6 +1,7 @@
 {
   "cloud": true,
   "pages": [
+    "pages/publish/publish",
     "pages/my/my",
     "pages/home/home",
     "pages/index/index",
@@ -11,7 +12,6 @@
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
     "pages/type/type",
-    "pages/publish/publish",
     "pages/search/search",
     "pages/modifyInfo/modifyInfo"
   ],
@@ -19,7 +19,7 @@
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1890ff",
-    "navigationBarTitleText": "御景城跳蚤市场",
+    "navigationBarTitleText": "乐淘淘",
     "navigationBarTextStyle": "#ffffff"
   },
   "tabBar": {

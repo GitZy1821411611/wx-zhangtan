@@ -1,1 +1,10 @@
-{}
+{
+  "navigationBarTitleText": "发布商品",
+  "usingComponents": {
+    "i-panel": "../../libs/panel/index",
+    "i-input": "../../libs/input/index",
+    "wux-avatar": "../../dist/avatar/index",
+    "wux-gallery": "../../dist/gallery/index",
+    "wux-button": "../../dist/button/index"
+  }
+}

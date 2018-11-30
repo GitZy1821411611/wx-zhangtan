@@ -1,2 +1,18 @@
-<!--miniprogram/pages/publish/publish.wxml-->
-<text>miniprogram/pages/publish/publish.wxml</text>
+<view class='publish'>
+  <i-panel title="基本信息">
+    <i-input class='i-input' value="{{ pTitle }}" bind:change="titleChange" placeholder="标题 品牌品类都是买家喜欢搜索的" />
+    <textarea class='i-textarea' value='{{detail}}' bindinput="bindTextAreaBlur" placeholder='描述一下宝贝的转手原因、入手渠道和使用感受'></textarea>
+  </i-panel>
+  <i-panel title="图片信息">
+    <view class='img-wrap'>
+      <wux-avatar bindtap="doUpload" class="upload" shape="square" src="{{avatarUrl}}" bodyStyle="width:160rpx;height:160rpx;">上传图片</wux-avatar>
+    </view>
+    <view class='img-wrap' wx:for="{{uploadImages}}" wx:key="{{index}}">
+      <wux-avatar class="upload" shape="square" src="{{item}}" bodyStyle="width:160rpx;height:160rpx;"></wux-avatar>
+    </view>
+  </i-panel>
+  <view style='padding:16px'>
+    <wux-button block type="royal" bindtap='publish'>确定发布</wux-button>
+  </view>
+
+</view>
